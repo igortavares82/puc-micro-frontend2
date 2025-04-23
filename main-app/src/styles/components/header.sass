@@ -1,0 +1,47 @@
+@import '../variables.sass'
+
+.menu-wrapper
+  display: flex
+  justify-content: center
+  width: 100%
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+.menu-list
+  list-style-type: none
+  display: contents
+  overflow: hidden
+
+  li
+    display: inline-block
+    width: 10%
+    padding: 2%
+    font-weight: lighter
+    text-align: center
+    border-bottom: 3px solid #e5e3e3
+  
+    a
+      text-decoration: none
+      color: $font-color
+
+  li:hover
+    a
+      color: $highlight-color
+  
+  li:first-letter
+    color: #ff9100
+
+  li:hover
+    color: $highlight-color
+    border-bottom: 3px solid $highlight-color
+    background: #bae5ff
+    background: linear-gradient(0deg,rgba(186, 229, 255, 1) 0%, rgba(229, 227, 227, 1) 35%)
+
+.menu-list-selected
+  color: $highlight-color
+  border-bottom: 3px solid $highlight-color
+  background: #bae5ff
+  background: linear-gradient(0deg,rgba(186, 229, 255, 1) 0%, rgba(229, 227, 227, 1) 35%)
+
+
+
+  
